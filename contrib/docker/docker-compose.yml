@@ -12,8 +12,6 @@ ckan:
 db:
   container_name: db
   image: ckan/postgresql:latest
-  ports:
-    - "5432:5432"
   
 solr:
   container_name: solr
@@ -24,5 +22,3 @@ solr:
 redis:
   container_name: redis
   image: redis:latest
-  ports: 
-    - "6379:6379"
